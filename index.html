@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Event Finder</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <a class="navbar-brand italic" href="index.html">Event Finder</a>
+    </nav>
+    <div class="container buscador">
+        <div id="buscador" class=" card card-body">
+            <h1 class="text-center two-em mb-5">Search <span class="alter-word">Events</span> of your interest or in your<span class="alter-word"> City</span></h1>
+
+            <div class="form-group">
+                <label for="exampleSelect1">Search by Name or City</label>
+                <input type="text" id="evento" class="form-control" placeholder="">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleSelect1">Choose your category</label>
+                <select class="form-control" id="listado-categorias"></select>
+            </div>
+
+
+            <input type="submit" class="mt-5 form-control btn btn-primary" id="buscarBtn" value="Search">
+        </div>
+        <div id="resultado-eventos" class="row mt-5"></div>
+    </div>
+
+    <footer class="mt-5 p-3 text-center bg-primary ">
+        Event Finder &copy; Jacobo Martinez
+    </footer>
+
+    <script src="js/eventbrite.js"></script>
+    <script src="js/interfaz.js"></script>
+    <script src="js/scrollreveal.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
