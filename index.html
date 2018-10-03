@@ -6,18 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Event Finder</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
 
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-        <a class="navbar-brand italic" href="index.html">Event Finder</a>
+        <div style="margin: 0 auto">
+            <h1 class="font-weight-bold">
+                <a class="text-white" style="text-decoration: none" href="index.html">
+                Event
+                <img src="./img/favicon.png" width="80" height="80" alt="Logo">
+                Finder
+            </a>
+            </h1>
+        </div>
     </nav>
     <div class="container buscador">
         <div id="buscador" class=" card card-body">
-            <h1 class="text-center two-em mb-5">Search <span class="alter-word">Events</span> of your interest or in your<span class="alter-word"> City</span></h1>
+            <h1 class="text-center two-em mb-5">Search <span class="alter-word">Events</span> of your interest or in
+                your<span class="alter-word"> City</span></h1>
 
             <div class="form-group">
                 <label for="exampleSelect1">Search by Name or City</label>
@@ -35,8 +47,11 @@
         <div id="resultado-eventos" class="row mt-5"></div>
     </div>
 
-    <footer class="mt-5 p-3 text-center bg-primary ">
-        Event Finder &copy; Jacobo Martinez
+    <footer class="mt-5 p-3 text-center ">
+        Made with love
+        <a class="font-weight-bold text-white" href="http://github.com/cobimr">Jacobo Martinez</a>
+        using
+        <a class="font-weight-bold text-white" href="https://www.eventbrite.es/">Event Brite API</a>
     </footer>
 
     <script src="js/eventbrite.js"></script>
