@@ -1,3 +1,6 @@
+import { EventBrite } from './eventbrite.js';
+const eventbrite = new EventBrite();
+
 export class Interfaz {
   constructor() {
     // Inicializa la app al instanciar

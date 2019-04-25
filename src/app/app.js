@@ -1,5 +1,12 @@
-// Event Listener para buscar eventos
+import { EventBrite } from './eventbrite.js';
+import { Interfaz } from './interfaz.js';
+
+// Instanciar classes
+const eventbrite = new EventBrite();
+const ui = new Interfaz();
+
 export const run = () => {
+  // Event Listener para buscar eventos
   document.getElementById('buscarBtn').addEventListener('click', (e) => {
     e.preventDefault();
   
