@@ -1,4 +1,4 @@
-class Interfaz {
+export class Interfaz {
   constructor() {
     // Inicializa la app al instanciar
     this.init();

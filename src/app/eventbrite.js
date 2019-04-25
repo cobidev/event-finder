@@ -1,4 +1,4 @@
-class EventBrite {
+export class EventBrite {
   constructor() {
     this.token_auth = '3JNVWOCJV27ZXVYE4OHG';
     this.ordenar = 'date';
