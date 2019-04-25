@@ -4,7 +4,7 @@
   "description": "Simple Web-app to search events around the world by name/city and category. By using REST API of EventBrite",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/cobimr/event-finder/issues"
   },
-  "homepage": "https://github.com/cobimr/event-finder#readme"
+  "homepage": "https://github.com/cobimr/event-finder#readme",
+  "devDependencies": {
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1"
+  }
 }
