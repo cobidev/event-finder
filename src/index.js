@@ -1,4 +1,4 @@
 import { run } from './app/app.js';
-import './main.css';
+import './main.scss';
 
 run();

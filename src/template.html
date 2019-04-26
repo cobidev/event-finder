@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Event Finder</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <div style="margin: 0 auto">
+        <h1 class="font-weight-bold">
+          <a class="text-white" style="text-decoration: none" href="index.html">
+            Event
+            <img src="./img/favicon.png" width="80" height="80" alt="Logo" />
+            Finder
+          </a>
+        </h1>
+      </div>
+    </nav>
+    <div class="container buscador">
+      <div id="buscador" class=" card card-body">
+        <h1 class="text-center two-em mb-5">
+          Search <span class="alter-word">Events</span> of your interest or in
+          your<span class="alter-word"> City</span>
+        </h1>
+
+        <div class="form-group">
+          <label for="exampleSelect1">Search by Name or City</label>
+          <input type="text" id="evento" class="form-control" placeholder="" />
+        </div>
+
+        <div class="form-group">
+          <label for="exampleSelect1">Choose your category</label>
+          <select class="form-control" id="listado-categorias"></select>
+        </div>
+
+        <input
+          type="submit"
+          class="mt-5 form-control btn btn-primary"
+          id="buscarBtn"
+          value="Search"
+        />
+      </div>
+      <div id="resultado-eventos" class="row mt-5"></div>
+    </div>
+
+    <footer class="mt-5 p-3 text-center ">
+      Made with love
+      <a class="font-weight-bold text-white" href="http://github.com/cobimr"
+        >Jacobo Martinez</a
+      >
+      using
+      <a class="font-weight-bold text-white" href="https://www.eventbrite.es/"
+        >Event Brite API</a
+      >
+    </footer>
+  </body>
+</html>
