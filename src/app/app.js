@@ -6,6 +6,11 @@ const eventbrite = new EventBrite();
 const ui = new Interfaz();
 
 export const run = () => {
+  // Scroll Reveal
+  window.sr = ScrollReveal({
+    reset: true
+  });
+
   // Event Listener para buscar eventos
   document.getElementById('buscarBtn').addEventListener('click', (e) => {
     e.preventDefault();
