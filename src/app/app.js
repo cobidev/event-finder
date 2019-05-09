@@ -1,16 +1,11 @@
-import { EventBrite } from './eventbrite.js';
-import { Interfaz } from './interfaz.js';
+import EventBrite from './eventbrite.js';
+import Interfaz from './interfaz.js';
 
 // Instanciar classes
 const eventbrite = new EventBrite();
 const ui = new Interfaz();
 
-export const run = () => {
-  // Scroll Reveal
-  window.sr = ScrollReveal({
-    reset: true
-  });
-
+const run = () => {
   // Event Listener para buscar eventos
   document.getElementById('buscarBtn').addEventListener('click', (e) => {
     e.preventDefault();
@@ -29,12 +24,6 @@ export const run = () => {
           if(data.events.length > 0) {
             ui.limpiarResultados();
             ui.mostrarEventos(data);
-            // Scroll Reveal
-            sr.reveal('.evento', {
-              duration: 500,
-              origin: 'bottom',
-              easing: 'ease-in'
-            });
           } else {
             ui.mostrarMensaje('No hay eventos disponibles', 'alert alert-danger mt-4 text-center');
           }
@@ -45,3 +34,5 @@ export const run = () => {
     }
   })
 }
+
+export default run;

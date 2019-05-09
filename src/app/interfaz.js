@@ -1,7 +1,7 @@
-import { EventBrite } from './eventbrite.js';
+import EventBrite from './eventbrite.js';
 const eventbrite = new EventBrite();
 
-export class Interfaz {
+class Interfaz {
   constructor() {
     // Inicializa la app al instanciar
     this.init();
@@ -80,3 +80,5 @@ export class Interfaz {
     }, 3000);
   }
 }
+
+export default Interfaz;
