@@ -6,7 +6,9 @@ module.exports = {
     vendor: './src/vendor.js'
   },
   plugins: [
-    new Dotenv()
+    new Dotenv({
+      systemvars: true
+    })
   ],
   module: {
     rules: [
