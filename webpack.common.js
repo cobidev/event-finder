@@ -1,13 +1,8 @@
-const Dotenv = require('dotenv-webpack');
-
 module.exports = {
   entry: {
     main: './src/index.js',
     vendor: './src/vendor.js'
   },
-  plugins: [
-    new Dotenv()
-  ],
   module: {
     rules: [
       {
