@@ -39,6 +39,7 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
-    "dotenv-webpack": "^1.7.0"
+    "dotenv-webpack": "^1.7.0",
+    "fstream": "^1.0.12"
   }
 }
